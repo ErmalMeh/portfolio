@@ -1,111 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Your Name - Portfolio</title>
+    <title>Ermal Mehmeti - Professional Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
+
 <body>
-    
     <header>
-        <div class="container">
-            <h1>Ermal Mehmeti</h1>
-            <p>Web Developer | Front-End Developer</p>
-        </div>
+        <nav>
+            <div class="nav-container">
+                <h1>Ermal Mehmeti</h1>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li> 
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
     </header>
+
+  
+    <section id="home">
+        <div class="hero-content">
+            <h1>Hello, I'm <span>Ermal Mehmeti</span></h1>
+            <p>Web Developer | Front-End Developer</p>
+            <a href="#about" class="scroll-down">Scroll Down</a>
+        </div>
+    </section>
 
    
     <section id="about">
         <div class="container">
             <h2>About Me</h2>
-            <div class="bio">
-                
-                <p>
-                    Hello! I'm a passionate Front-End developer with a strong focus on creating
-                    user-friendly and responsive websites.Have more than 4 years of excperience on creating websites.
-                    I love solving complex problems 
-                    and making the web a better place with clean, efficient code. In my spare time, 
-                    I enjoy learning new technologies and improving my design skills.
-                    
-                </p>
-            </div>
+            <p>I am a passionate web developer with a love for creating beautiful, user-friendly websites. I specialize in front-end development, aiming to build interactive, responsive, and accessible web applications.</p>
+            <p>With experience in HTML, CSS, JavaScript, WordPress, and various design tools, I am committed to continuous learning and adapting to new technologies to stay ahead of the industry trends.</p>
         </div>
     </section>
 
    
     <section id="skills">
         <div class="container">
-            <h2>Skills</h2>
-            <div class="skills-list">
+            <h2>Skills & Technologies</h2>
+            <p>Here are some of the key technologies and tools I work with:</p>
+            <div class="skills-icons">
                 <div class="skill">
-                    <h3>HTML</h3>
-                    <div class="progress-bar">
-                        <div class="progress" style="width: 90%;"></div>
-                    </div>
+                    <img src="https://www.w3.org/html/logo/downloads/HTML5_Logo_512.png" alt="HTML5">
+                    <h4>HTML</h4>
                 </div>
                 <div class="skill">
-                    <h3>CSS</h3>
-                    <div class="progress-bar">
-                        <div class="progress" style="width: 85%;"></div>
-                    </div>
+                    <img src="https://1000logos.net/wp-content/uploads/2020/09/CSS-Logo-2011.png" alt="CSS3">
+                    <h4>CSS</h4>
                 </div>
                 <div class="skill">
-                    <h3>JavaScript</h3>
-                    <div class="progress-bar">
-                        <div class="progress" style="width: 80%;"></div>
-                    </div>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="JavaScript">
+                    <h4>JavaScript</h4>
                 </div>
                 <div class="skill">
-                    <h3>Wordpress</h3>
-                    <div class="progress-bar">
-                        <div class="progress" style="width: 70%;"></div>
-                    </div>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzAxIzs2yRTPxONA1yBwMZdhkNwlqmIpxFug&s" alt="WordPress">
+                    <h4>WordPress</h4>
                 </div>
             </div>
         </div>
     </section>
 
-   
+    <section id="experience">
+        <div class="container">
+            <h2>Experience</h2>
+            <div class="experience-item">
+                <h3>Front-End Developer | Innovation Acaddemy</h3>
+                <span>2019 - Present</span>
+                <p>Learning and making interesting new projects from 2019 and still interested on new things new languages etc.</p>
+            </div>
+           
+        </div>
+    </section>
+
     <section id="projects">
         <div class="container">
-            <h2>Projects</h2>
-            <div class="projects-gallery">
-                <div class="project">
-                    <img src="images/prj1.PNG" alt="Project 1">
-                    <h3>Kosovo Adventures</h3>
-                    <p>This is a website about our country to tell visitors interesting places to visit in Kosovo</p>
+            <h2>My Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>Project 1</h3>
+                    <p>A modern portfolio website showcasing my work and skills. <a href="ermalmeh.github.io">View Project</a></p>
                 </div>
-                <div class="project">
-                    <img src="images/prj2.PNG" alt="Project 2">
-                    <h3>DailyFit</h3>
-                    <p>This is a website to motivate people tha stay fit and healthy</p>
+                <div class="project-card">
+                    <h3>Project 2</h3>
+                    <p>A wonderful wordpress project comming soon <a href="ermalmehmetihw.infinityfreeapp.com">View Project</a></p>
                 </div>
+               
             </div>
         </div>
     </section>
 
-   
+
     <section id="contact">
         <div class="container">
             <h2>Contact Me</h2>
             <form id="contact-form">
-                <input type="text" id="name" placeholder="Your Name" required>
-                <input type="email" id="email" placeholder="Your Email" required>
-                <textarea id="message" placeholder="Your Message" required></textarea>
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
                 <button type="submit">Send Message</button>
             </form>
         </div>
     </section>
 
-   
+
     <footer>
         <div class="container">
-            <p>&copy; 2024 Ermal Mehmeti. All Rights Reserved.</p>
+            <div class="social-links">
+                <a href="https://instagram.com/yourusername" target="_blank">Instagram</a>
+                <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
+                <a href="https://github.com/yourusername" target="_blank">GitHub</a>
+            </div>
         </div>
     </footer>
-
-    <script src="script.js"></script>
 </body>
+
 </html>
